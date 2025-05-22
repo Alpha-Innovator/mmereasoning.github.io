@@ -246,7 +246,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified", style="width: 75%;">
+        <div class="content has-text-justified", style="width: 75%; margin-left: 12.5%;">
           <p>
             Logical reasoning is a fundamental aspect of human intelligence and an essential capability for multimodal large language models (MLLMs). Existing benchmarks fail to comprehensively evaluate MLLMs reasoning abilities due to the lack of explicit categorization for logical reasoning types and an unclear understanding of reasoning.
           </p>
@@ -255,11 +255,11 @@
           </p>
           <p>
             Experiments were conducted on state-of-the-art MLLMs, covering Chat and Thinking types of both open-source and closed-source. Evaluations with MME-Reasoning reveal these key findings:
-            <br/>
+            <br/><br/>
             <b>(1)</b> <b>MLLMs exhibit significant limitations and pronounced imbalances in reasoning capabilities</b>. Even the most advanced MLLMs achieve only limited results under holistic logical reasoning evaluation, with Gemini-Pro-2.5-Thinking scoring only 60.19%, followed by Seed1.5-VL (59.85) and o4-mini (57.49%);
-            <br/>
+            <br/><br/>
             <b>(2)</b> <b>Abductive reasoning remains a major bottleneck for current MLLMs</b>. Closed-source models exhibit an average gap of 5.38 points between deductive and abductive tasks, which further widens to 9.81 among open-source models, making abductive reasoning a key bottleneck
-            <br/>
+            <br/><br/>
             <b>(3)</b> <b>Reasoning length scales with task difficulty, benefiting performance but accompanied by marginal effects and decreasing token efficiency</b>.
             We hope MME-Reasoning serves as a foundation for advancing multimodal reasoning in MLLMs.
           </p>
@@ -539,38 +539,6 @@
           <div class="content has-text-centered">
             <img src="static/images/rule_based_case.png" alt="grade-lv" width="80%"/>
             <p>Evaluation of rule-based questions.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
-    <div class="columns is-centered m-6">
-      <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Evaluation Strategy</h2>
- 
-        
-        <div id="results-carousel" class="carousel results-carousel">
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/evaluation_mv/quality.jpg" alt="grade-lv" width="97%"/>
-              <p>CoT Quality Evaluation. <b>Recall:</b> Measures the <b>informativeness</b> of reasoning steps;
-                <b>Precision:</b> Evaluates the <b>accuracy</b> of each reasoning step.</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/evaluation_mv/robustness.jpg" alt="grade-lv" width="52%"/>
-              <p>CoT Robustness Evaluation. <b>Effectiveness:</b> Measures if CoT <b>interferes</b> with the perception tasks;
-              <b>Efficacy:</b> Evaluates if CoT <b>helps</b> reasoning tasks.</p>
-            </div>
-          </div>
-          <div class="box m-5">
-            <div class="content has-text-centered">
-              <img src="static/images/evaluation_mv/effiency.jpg" alt="grade-lv" width="55%"/>
-              <p>CoT Efficiency Evaluation. <b>Relevance Rate:</b> Quantifies the proportion of relevant reasoning steps;
-                <b>Reflection Quality:</b> Evaluates the model's reflection validity.</p>
-            </div>
           </div>
         </div>
       </div>
