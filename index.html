@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency">
-  <meta name="keywords" content="MMSearch">
+        content="MME-Reasoning: A Comprehensive Benchmark for Logical Reasoning in MLLMs">
+  <meta name="keywords" content="MME-Reasoning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency</title>
+  <title> MME-Reasoning: A Comprehensive Benchmark for Logical Reasoning in MLLMs</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
@@ -62,7 +62,7 @@
 </head>
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
       <span aria-hidden="true"></span>
@@ -72,12 +72,6 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <!-- <a class="navbar-item" href="https://keunhong.com">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a> -->
-      <!-- @PAN TODO: consider adding links? -->
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
           More Research
@@ -112,7 +106,7 @@
     </div>
 
   </div>
-</nav>
+</nav> -->
 
 
 <section class="hero">
@@ -121,78 +115,62 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title is-bold">
-            <span class="mathvista" style="vertical-align: middle">MME-CoT</span>
+            <span class="mathvista" style="vertical-align: middle">MME-Reasoning</span>
             </h1>
           <h2 class="subtitle is-3 publication-subtitle">
-            Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency
-            <!-- <br> -->
-            <!-- with GPT-4V, Bard, and Other Large Multimodal Models -->
+            A Comprehensive Benchmark for Logical Reasoning in MLLMs
           </h2>
         
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://caraj7.github.io">Dongzhi Jiang*</a><sup style="color:#6fbf73;">1</sup>,
+              <a href="https://jiakangyuan.github.io/">Jiakang Yuan*</a><sup style="color:#6fbf73;">1,3</sup>,
             </span>
            <span class="author-block">
-              <a href="https://zrrskywalker.github.io">Renrui Zhang*†</a><sup style="color:#6fbf73;">1</sup>,
+              <a href="https://pengts.github.io/">Tianshuo Peng*</a><sup style="color:#9400D3;">2,3</sup>,
             </span>
            <span class="author-block">
-              <a href="https://ziyuguo99.github.io">Ziyu Guo</a><sup style="color:#9400D3;">2</sup>,
+              <a href="https://openreview.net/profile?id=~Yilei_Jiang2">Yilei Jiang</a><sup style="color:#9400D3;">2</sup>,
            </span>
            <span class="author-block">
-              <a href="https://yanwei-li.com/">Yanwei Li<sup>‡</sup></a><sup style="color:#ed4b82;">3</sup>,
+              <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=pBFOTBwAAAAJ">Yiting Lu</a><sup style="color:#ed4b82;">4</sup>,
            </span>
            <span class="author-block">
-              <a href="https://github.com/yqi19?tab=repositories ">Yu Qi<sup>‡</sup></a><sup style="color:#4169E1;">4</sup>,
+              <a href="https://zrrskywalker.github.io/">Renrui Zhang</a><sup style="color:#9400D3;">2</sup>,
            </span>
            <span class="author-block">
-              <a href="https://github.com/xinyan-cxy">Xinyan Chen<sup>‡</sup></a><sup style="color:#6fbf73;">1</sup>
+              <a href="https://tulerfeng.github.io/">Kaituo Feng></a><sup style="color:#9400D3;">2</sup>
            </span>
            <br/>
            <span class="author-block">
-              <a href="">Liuhui Wang<sup>‡</sup></a><sup style="color:#FF8C00;">5</sup>,
+              <a href="https://bradyfu.github.io/">Chaoyou Fu</a><sup style="color:#FF8C00;">5</sup>,
            </span>
            <span class="author-block">
-              <a href="https://github.com/JOKERTONIGHT">Jianhan Jin<sup>‡</sup></a><sup style="color:#800080;">6</sup>,
+              <a href="https://eetchen.github.io/">Tao Chen<sup>‡</sup></a><sup style="color:#6fbf73;">1</sup>,
            </span>
            <span class="author-block">
-              <a href="">Claire Guo<sup>‡</sup></a><sup style="color:#FF1493;">7</sup>,
+              <a href="http://leibai.site/">Lei Bai</a><sup style="color:#4169E1;">3</sup>,
            </span>
            <span class="author-block">
-              <a href="https://shenyann.github.io/">Shen Yan</a><sup style="color:#ed4b82;">3</sup>,
+              <a href="https://bobrown.github.io/boZhang.github.io/">Bo Zhang<sup>‡</sup></a><sup style="color:#4169E1;">3</sup>
            </span>
            <span class="author-block">
-              <a href="https://bobrown.github.io/boZhang.github.io/">Bo Zhang</a><sup style="color:#4169E1;">8</sup>
-           </span>
-           <br/>
-           <span class="author-block">
-              <a href="https://bradyfu.github.io/">Chaoyou Fu</a><sup style="color:#800080;">6</sup>,
-           </span>
-           <span class="author-block">
-              <a href="https://gaopengcuhk.github.io/">Peng Gao</a><sup style="color:#4169E1;">8</sup>,
-           </span>
-           <span class="author-block">
-              <a href="https://www.ee.cuhk.edu.hk/~hsli/">Hongsheng Li</a><sup style="color:#6fbf73;">1</sup>
+              <a href="https://xyue.io/">Xiangyu Yue</a><sup style="color:#9400D3;">2</sup>
            </span>
           </div>
            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup style="color:#6fbf73;">1</sup>CUHK MMLab,</span>
-              <span class="author-block"><sup style="color:#9400D3;">2</sup>CUHK MiuLar Lab,</span>
-              <span class="author-block"><sup style="color:#ed4b82;">3</sup>ByteDance,</span>
-              <span class="author-block"><sup style="color:#4169E1;">4</sup>NEU</span>
-              <br/>
-              <span class="author-block"><sup style="color:#FF8C00;">5</sup>UPenn,</span>
-              <span class="author-block"><sup style="color:#800080;">6</sup>NJU,</span>
-              <span class="author-block"><sup style="color:#FF1493;">7</sup>CUHK (Shenzhen),</span>
-              <span class="author-block"><sup style="color:#4169E1;">8</sup>Shanghai AI Laboratory</span>
+              <span class="author-block"><sup style="color:#6fbf73;">1</sup>FDU,</span>
+              <span class="author-block"><sup style="color:#9400D3;">2</sup>CUHK MMLab,</span>
+              <span class="author-block"><sup style="color:#ed4b82;">3</sup>Shanghai AI Laboratory,</span>
+              <span class="author-block"><sup style="color:#4169E1;">4</sup>USTC,</span>
+              <span class="author-block"><sup style="color:#FF8C00;">5</sup>NJU</span>
            </div>
-           <div class="icml-label">ICML2025</div>
+           <!-- <div class="icml-label">ICML2025</div> -->
            <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <!-- @PAN TODO: change links -->
-                <a href="https://arxiv.org/pdf/2502.09621"
+                <!-- TODO: change links -->
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -200,30 +178,19 @@
                   <span>Paper</span>
                 </a>
               </span>
+              <!-- arxiv link -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2502.09621"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
-                <!-- <a href="https://arxiv.org/abs/2409.12959"
-                   class="external-link button is-normal is-rounded is-dark"> -->
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/CaraJ7/MME-CoT"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -233,7 +200,7 @@
               </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/CaraJ/MME-CoT"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <!-- <i class="far fa-images"></i> -->
@@ -244,18 +211,18 @@
                 </a>
               </span> 
               <!-- Visualization Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/datasets/CaraJ/MME-CoT/viewer"
+              <!-- <span class="link-block">
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <p style="font-size:18px">🔮</p>
                   </span>
                   <span>Visualize</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Leaderboard Link. -->
               <span class="link-block">
-                <a href="https://mmecot.github.io/#leaderboard"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <p style="font-size:18px">🏆</p>
@@ -281,24 +248,24 @@
         <h2 class="title is-3">Introduction</h2>
         <div class="content has-text-justified">
           <p>
-            Answering questions with Chain-of-Thought (CoT) has significantly enhanced the reasoning capabilities of Large Language Models (LLMs), yet its impact on Large Multimodal Models (LMMs) still lacks a systematic assessment and in-depth investigation. 
+            Logical reasoning is a fundamental aspect of human intelligence and an essential capability for multimodal large language models (MLLMs). Existing benchmarks fail to comprehensively evaluate MLLMs reasoning abilities due to the lack of explicit categorization for logical reasoning types and an unclear understanding of reasoning.
           </p>
           <p>
-            In this paper, we introduce <b>MME-CoT</b> , a specialized benchmark evaluating the CoT reasoning performance of LMMs, <b>spanning six domains</b>: math, science, OCR, logic, space-time, and general scenes. As the first comprehensive study in this area, we propose a <b>thorough evaluation suite</b> incorporating <b>three novel metrics</b> that assess the reasoning <b>quality</b>, <b>robustness</b>, and <b>efficiency</b> at a fine-grained level.
+            In this paper, we introduce <b>MME-Reasoning</b>, a comprehensive benchmark specifically designed to evaluate the reasoning capability of MLLMs. MME-Reasoning consists of 1,188 carefully curated questions that systematically cover types of logical reasoning (<b>inductive</b>, <b>deductive</b>, and <b>abductive</b>), while spanning a range of difficulty levels.
           </p>
           <p>
-            Leveraging curated high-quality data and a unique evaluation strategy, we conduct an in-depth analysis of state-of-the-art LMMs, uncovering <b>several key insights</b>:
-            <b>(1)</b> <b>Models with reflection mechanism demonstrate a superior CoT quality</b>, with Kimi k1.5 outperforming GPT-4o and demonstrating the highest quality results;
-            <b>(2)</b> <b>CoT prompting often degrades LMM performance on perception-heavy tasks</b>, suggesting a potentially harmful overthinking behavior;
-            <b>(3)</b> <b>Although the CoT quality is high, LMMs with reflection exhibit significant inefficiency in both normal response and self-correction phases</b>.
-            We hope MME-CoT serves as a foundation for advancing multimodal reasoning in LMMs.
+            Experiments were conducted on state-of-the-art MLLMs, covering Chat and Thinking types of both open-source and closed-source. Evaluations with MME-Reasoning reveal these key findings:
+            <b>(1)</b> <b>MLLMs exhibit significant limitations and pronounced imbalances in reasoning capabilities</b>. Even the most advanced MLLMs achieve only limited results under holistic logical reasoning evaluation, with Gemini-Pro-2.5-Thinking scoring only 60.19%, followed by Seed1.5-VL (59.85) and o4-mini (57.49%).;
+            <b>(2)</b> <b>Abductive reasoning remains a major bottleneck for current MLLMs</b>. Closed-source models exhibit an average gap of 5.38 points between deductive and abductive tasks, which further widens to 9.81 among open-source models, making abductive reasoning a key bottleneck.
+            <b>(3)</b> <b>Reasoning length scales with task difficulty, benefiting performance but accompanied by marginal effects and decreasing token efficiency</b>.
+            We hope MME-Reasoning serves as a foundation for advancing multimodal reasoning in MLLMs.
           </p>
         </div>
       </div>
     </div>
     <div class="content has-text-centered">
-      <img src="static/images/overview_mv/image/radar.jpg" alt="grade-lv" width="40%"/>
-      <p>Chain-of-Thought Performance of Leading LMMs on <span class="mathvista">MME-CoT</span>.</p>
+      <img src="static/images/performance.png" alt="grade-lv" width="100%"/>
+      <p>Performance comparison between thinking and chat models on <span class="mathvista">MME-Reasoning</span>.</p>
     </div>
 </div>
 </section>
