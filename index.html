@@ -246,7 +246,7 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Introduction</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-justified", style="width: 75%;">
           <p>
             Logical reasoning is a fundamental aspect of human intelligence and an essential capability for multimodal large language models (MLLMs). Existing benchmarks fail to comprehensively evaluate MLLMs reasoning abilities due to the lack of explicit categorization for logical reasoning types and an unclear understanding of reasoning.
           </p>
@@ -521,48 +521,29 @@
         <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="content has-text-justified">
+          <div class="box m-5">
+            <div class="content has-text-centered">
+              <img src="static/images/pipeline.png" alt="data-overview" style="max-width: 80%;"/>
+              <p>The overall construction process of MME-Reasoning.</p>
+            </div>
+          </div>
           <p>
-            <span class="mathvista">MME-CoT </span>composes <b>6 major domains with 17 subcategories</b>. To facilitate CoT evaluation, we provide key steps annotation and reference image captions for all the reasoning questions. The annotation and reference captions are all human annotated and verified. In addition, we incorporate a variety of perception tasks along with the reasoning tasks in the benchmark for a comprehensive evaluation. In total, MME-CoT contains <b>1,130 questions with 3,865 key step annotation</b>.
+            <span class="mathvista">MME-Reasoning</span> consists of 1,188 questions, including 1,008 newly collected items. MME-Reasoning comprehensively covers three types of reasoning (inductive, deductive, and abductive) and includes three question types (multiple-choice, free-form, and rule-based). We further divided MME-Reasoning into three difficulty levels (easy, medium, and hard) and summarize five types of abilities that MME-Reasoning test including pattern analysis, planning and exploring, spatial and temporal, calculation, and casual chain analysis. The key statistics and construction pipeline of MME-Reasoning is shown below:
           </p>
-          <p>
-            Unlike the simplistic metrics used in previous studies, MME-CoT introduces a rigorous evaluation framework that delves into the fine-grained CoT process of LMMs, assessing reasoning quality, robustness, and efficiency. Specifically, we address <b>three critical questions</b> as follows: 
-            <br>
-            <b>(1)</b> <b>Quality:</b> Is each intermediate CoT step logically valid and faithful without hallucination? 
-            <br>
-            <b>(2)</b> <b>Robustness:</b> Does CoT interfere with perception tasks, and to what extent does it enhance reasoning tasks? 
-            <br>
-            <b>(3)</b> <b>Efficiency:</b> How can we assess the efficiency of CoT in a long reasoning process? 
-          </p>
-
-        <div class="box m-5">
           <div class="content has-text-centered">
-            <img src="static/images/overview_mv/image/teaser.jpg" alt="data-overview" style="max-width: 100%;"/>
+            <img src="static/images/statistics.png" alt="grade-lv" width="80%"/>
+          </div>
+          <p>
+            For rule-based questions, we first use GPT to extract answers and convert them into an intermediate format, which is then judged using specific scripts.
+          </p>
+          <div class="content has-text-centered">
+            <img src="static/images/rule_based_case.png" alt="grade-lv" width="80%"/>
+            <p>Evaluation of rule-based questions.</p>
           </div>
         </div>
-
-        </div>
       </div>
     </div>
-    <div class="columns is-centered">
-      <div class="column" style="margin-right: -30rem;">
-        <div class="content has-text-centered">
-          <img src="static/images/data-composition_ms.jpg" alt="data-overview" style="max-width: 70%;"/>
-          <p> 
-            Category and subcategory distribution of reasoning and perception tasks in
-            <span class="mathvista">MME-CoT</span>.<br/>
-          </p> 
-        </div>
-      </div>
-      <div class="column" style="margin-right: -10rem;">
-        <div class="content has-text-centered">
-          <img src="static/images/statistics_ms.jpg" alt="data-overview" style="max-width: 30.7%;"/>
-          <p> 
-            Key statistics of
-            <span class="mathvista">MME-CoT</span>.<br/>
-          </p> 
-        </div>
-      </div>
-    </div>
+    
 
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
